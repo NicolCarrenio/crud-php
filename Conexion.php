@@ -4,8 +4,8 @@
     class Conexion {
 
         private $host = 'localhost';
-        private $dbname = 'dam';
-        private $usuario = 'admin';
+        private $dbname = 'trabajo';
+        private $usuario = 'Nico';
         private $password = 'admin';
         private $atributos = array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
@@ -24,9 +24,5 @@
                 echo 'Error conectando con la base de datos: ' . $e->getMessage();
             }
     
-        }
-
-        public function desconectar() {
-            $this->$conexion = null;
         }
     }
